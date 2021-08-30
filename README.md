@@ -5,7 +5,7 @@ scoreHIO leverages a published human developing multi-endodermal-organ cell atla
 ## Introduction
 Due to the pluripotency of embryonic stem cells (ESCs) and induced pluripotent stem cells (iPSCs), even being provided with signaling molecules to steer intestinal cell fate, off-target cell types could be generated in the human pluripotent stem cell derived intestine organoids (HIOs). By comparing the organoid cells and the developing human multi-endodermal-organ cells, this package provides quantitative estimates about intestinal cell fate specification of the HIOs. For visualization, it provides the option to project the organoid cells to the developing atlas. In addition to assessment of fidelity, this package also supports intestinal or uncommitted epithelial stem cell maturity estimation by comparing to the develping or adult duodenum intestinal stem cells.
 
-<img src="man/figures/art.jpeg" align="center" />
+<img src="man/figures/art.jpg" align="center" />
 
 ## Installation
 scoreHIO reads Seurat object as input. The function of fidelity quantification by scoreHIO relies on R packages uwot and RANN. To write results to query Seurat object, Seurat package (>=3.0) is required. scoreHIO supports multiple ways to quantify stem cell maturity. If you would like to try the quadratic-programming-based method, you would need to install package quadprog.    
