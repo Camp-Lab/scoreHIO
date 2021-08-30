@@ -8,9 +8,9 @@ Due to the pluripotency of embryonic stem cells (ESCs) and induced pluripotent s
 <img src="man/figures/art.jpg" align="center" />
 
 ## Installation
-scoreHIO reads Seurat object as input. The function of fidelity quantification by scoreHIO relies on R packages uwot and RANN. To write results to query Seurat object, Seurat package (>=3.0) is required. scoreHIO supports multiple ways to quantify stem cell maturity. If you would like to try the quadratic-programming-based method, you would need to install package quadprog.    
+The function of fidelity quantification by scoreHIO relies on R packages 'uwot' and 'RANN'. To write results to query Seurat object, 'Seurat' package (>=3.0) is required. scoreHIO supports multiple ways to quantify stem cell maturity. If you would like to try the quadratic-programming-based method, you would need to install package 'quadprog'.    
 
-'uwot', 'RANN', 'Seurat', 'quadprog' could be installed from CRAN
+'uwot', 'RANN', 'Seurat', 'quadprog' could be installed from CRAN:
 ```r
 install.packages('Seurat')
 install.packages('uwot')
@@ -18,16 +18,16 @@ install.packages('RANN')
 install.packages('quadprog')
 ```
 
-After installation of dependencies, you could install scoreHIO from github
+After installation of dependencies, you could install scoreHIO from GitHub:
 ```r
 devtools::install_github('Camp-Lab/scoreHIO')
 ```
 
 In addition to the R package, you'll also need to download the developing human multi-endodermal organ reference from [here](https://doi.org/10.17632/x53tts3zfr), and provide the path to the folder with these downloaded data to the parameter `organ_ref_dir` of the function `score_fidelity`. By default, `score_fidelity` assumes this folder is named as `Ref_data_for_projection_to_fetal_atlas` which is in parallel to the working folder.
 
-# Quick start
+## Quick start
 ```r
-# Load Packages
+# Load the package
 library(scoreHIO)
 
 # A `test_seurat_object` consisting of 1000 intestinal or non-fully specified stem cells of HIOs of two groups is automatically loaded for your test. It contains normalized expression data.
