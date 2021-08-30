@@ -1,0 +1,37 @@
+Package: scoreHIO
+Title: Quantify the fidelity and epithelial stem cell maturity of human pluripotent stem cell derived intestine organoids 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Qianhui",
+           family = "Yu",
+           role = c("aut", "cre"),
+           email = "qianhui.yu@roche.com",
+           comment = c(ORCID = "0000-0002-0399-8924"))
+Description: Due to the pluripotency of embryonic stem cells (ESCs) and 
+    induced pluripotent stem cells (iPSCs), even being provided with 
+	signaling molecules to steer intestinal cell fate, off-target cell 
+	types could be generated in the human pluripotent stem cell derived 
+	intestine organoids (HIOs). By calculating the Euclidean distance 
+	between the organoid cells and the developing human multi-endodermal-
+	organ cells on the space of similarity to each cluster of each sample 
+	of the developing atlas and searching for the k-nearest neighbor cells 
+	in the developing atlas for each organoid cell, this package provides
+	quantitative estimates about intestinal cell fate specification of 
+	the HIOs. For visualization, it provides the option to project the 
+	organoid cells to the developing atlas. In addition to assessment of 
+	fidelity, this package also supports epithelial stem cell maturity 
+	estimation by multiple ways, including transcriptome-deconvolution-
+	based and transcriptome similarity to adult or develping duodenal 
+	stem cells.       
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    uwot,
+    Seurat,
+    RANN,
+    quadprog,
+    beanplot
