@@ -1,6 +1,6 @@
 # scoreHIO
 
-scoreHIO leverages a published human developing multi-endodermal-organ cell atlas ([Yu et al, Cell, 2021](https://doi.org/10.1016/j.cell.2021.04.028)) to quantify the fidelity and epithelial stem cell maturity of human pluripotent stem cell derived intestine organoids
+scoreHIO leverages a published human developing multi-endodermal-organ cell atlas ([Yu, Kilik, Holloway et al, Cell, 2021](https://doi.org/10.1016/j.cell.2021.04.028)) to quantify the fidelity and epithelial stem cell maturity of human pluripotent stem cell derived intestine organoids
 
 ## Introduction
 Due to the pluripotency of embryonic stem cells (ESCs) and induced pluripotent stem cells (iPSCs), even being provided with signaling molecules to steer intestinal cell fate, off-target cell types could be generated in the human pluripotent stem cell derived intestine organoids (HIOs). By comparing the organoid cells and the developing human multi-endodermal-organ cells, this package provides quantitative estimates about intestinal cell fate specification of the HIOs. For visualization, it provides the option to project the organoid cells to the developing atlas. In addition to assessment of fidelity, this package also supports intestinal or uncommitted epithelial stem cell maturity estimation by comparing to the develping or adult duodenum intestinal stem cells.
@@ -55,4 +55,4 @@ maturity_res <- score_maturity(
 ```
 
 ## Citation
-If you find this tool helpful, please consider citing our original paper [Yu et al, Cell, 2021](https://doi.org/10.1016/j.cell.2021.04.028)
+If you find this tool helpful, please consider citing our original paper [Yu, Kilik, Holloway et al, Cell, 2021](https://doi.org/10.1016/j.cell.2021.04.028)
